@@ -1,0 +1,23 @@
+
+public class TestCar {
+    public static void main(String[] args) {
+        // Create an ElectricCar instance
+        ElectricCar tesla = new ElectricCar("Tesla ", "Model S", 2023, 100.0);
+
+        // Create a SportsCar instance
+        SportsCar ferrari = new SportsCar("Ferrari ", "488 GTB", 2022, 330.0, 3.0, true);
+
+        // Print object details
+        System.out.println("=== Car Details ===");
+        System.out.println(tesla);
+        System.out.println(ferrari);
+
+        // Test methods
+        System.out.println("\n=== Range and Top Speed ===");
+        System.out.println(tesla.getMake() + " Range: " + tesla.calculateRange() + " km");
+        System.out.println(ferrari.getMake() + " Top Speed: " + ferrari.getTopSpeed() + " km/h");
+
+       
+        
+    }
+}
